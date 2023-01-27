@@ -6,7 +6,7 @@ $(function () {
   });
 
   function GroupTon(groupElement) {
-    var box = $(groupElement).find(".C"); //find.(fuck);
+    var box = $(groupElement).find(".C");
     //    var title = $(groupElement).find(".MDetails");
 
     box.each(function (idx) {

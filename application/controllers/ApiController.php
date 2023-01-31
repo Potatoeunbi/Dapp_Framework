@@ -7,10 +7,10 @@ class ApiController{
     public function get($url, $data){
         $method = "GET";
         if($data == 0){
-            $url = "http://220.69.240.130:3000" .$url;
+            $url = "" .$url;
         }
         else{
-            $url = "http://220.69.240.130:3000" .$url. "?" . http_build_query($data, '', );
+            $url = "" .$url. "?" . http_build_query($data, '', );
         }
         $ch = curl_init();                                 //curl 초기화
 		curl_setopt($ch, CURLOPT_URL, $url);               //URL 지정하기
@@ -27,16 +27,7 @@ class ApiController{
     }
 
     public function post($url,$data){
-        // $data = [
-        //     'ID' => '100',
-        //     'Content' => 'JUNWONLEE',
-        //     'Pwd' => 'pass00',
-        //     'Name' => "LEEJUNWON",
-        //     'Coin' => 8,
-        //     'Time' => 'now'
-        // ];
-        // 위의 형식으로 매개변수로 넘겨주면 됨
-        $url = "http://220.69.240.130:3000".$url;
+        $url = "".$url;
         
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
